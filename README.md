@@ -1,7 +1,7 @@
-# golang.org/dl
+# github.com/zrhmn/godl
 
 This repository holds the Go wrapper programs that run specific versions of Go, such
-as `go install golang.org/dl/go1.10.3@latest` and `go install golang.org/dl/gotip@latest`.
+as `go install github.com/zrhmn/godl/go1.10.3@latest` and `go install github.com/zrhmn/godl/gotip@latest`.
 
 ## Report Issues / Send Patches
 
