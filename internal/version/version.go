@@ -415,11 +415,16 @@ func exe() string {
 }
 
 func goroot(version string) (string, error) {
+	root := os.Getenv("GODLROOT")
+	if len(root) != 0 {
+		return root, nil
+	}
+
 	home, err := homedir()
 	if err != nil {
 		return "", fmt.Errorf("failed to get home directory: %v", err)
 	}
-	return filepath.Join(home, "sdk", version), nil
+	return filepath.Join(home, ".godl", version), nil
 }
 
 func homedir() (string, error) {
